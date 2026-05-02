@@ -29,10 +29,10 @@ function Work() {
   return (
        <>
           <div>
-              <div className="text-center">
-                 <p>My portfolio</p>
+              <div className="text-center mt-[20%] ">
+               
                  <h1 className="font-bold text-5xl mt-5">My latest work</h1>
-                 <p className="w-[35%] font-mono mt-6 mx-auto">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+                 <p className="w-[35%] font-mono mt-6 mx-auto mb-[10%]">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
               </div>
              
              {/* .... */}

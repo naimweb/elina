@@ -10,10 +10,10 @@ function App() {
   return (
     <>
      <div>
-    <Nav />
   
 
      </div>
+    <Nav />
    
         <Routes>
              <Route path = "/service"  element={<Service />}/>
