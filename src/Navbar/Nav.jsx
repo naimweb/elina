@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CiDark, CiSun } from "react-icons/ci";
 import { BsSend } from "react-icons/bs";
-import { HiMenu } from "react-icons/hi";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 import { useState } from 'react';

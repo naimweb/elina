@@ -1,9 +1,13 @@
 
-
 function About() {
   return (
-    <div>this is aboute page
-    </div>
+        <>
+          <div>
+              <div>
+              
+              </div>
+          </div>
+        </>
   )
 }
 
