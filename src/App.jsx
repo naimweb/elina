@@ -10,6 +10,8 @@ function App() {
   return (
       <>
         <Nav />
+        <Home />
+        <About />
         <Routes>
              <Route path = "/about" element={<About />}/>
              <Route path = "/home"  element={<Home />}/>
