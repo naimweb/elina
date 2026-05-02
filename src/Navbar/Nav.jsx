@@ -14,7 +14,7 @@ function Nav() {
     <>
       <nav className='flex items-center justify-between px-6 md:px-10 py-4 shadow-md bg-white sticky top-0 z-50'>
     
-        <Link to = "/"className='text-2xl font-bold text-blue-600'>Elina</Link>
+        <Link to = "/"className='text-2xl font-bold text-blue-600'>✨Elina</Link>
 
         {/* Desktop Menu */}
         <div className='hidden md:flex gap-6 text-gray-700 font-medium'>

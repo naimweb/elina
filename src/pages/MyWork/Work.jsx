@@ -21,7 +21,7 @@ function Work() {
     },
     {
       id: 4,
-      image: "./img4.jpg",
+      image: "./uiUx.png",
       title: "UI/UX designing",
       category: "UI/UX Design",
     },
@@ -29,15 +29,15 @@ function Work() {
   return (
        <>
           <div>
-              <div className="text-center mt-[20%] ">
+              <div className="text-center mt-[4%] ">
                
-                 <h1 className="font-bold text-5xl mt-5">My latest work</h1>
-                 <p className="w-[35%] font-mono mt-6 mx-auto mb-[10%]">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
+                 <h1 className="font-bold text-5xl ">My latest work</h1>
+                 <p className="w-[35%] font-mono mt-6 mx-auto mb-[5%]">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
               </div>
              
              {/* .... */}
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] mx-auto mt-10">
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] mx-auto ">
 
         {data.map((item) => (
           <div 

@@ -36,7 +36,7 @@ function Service() {
    ]
   return (
      <>
-        <div className="text-center mt-[10%] mb-9">
+        <div className="text-center mt-[5%] mb-9">
             <p>What i offer</p>
             <h1 className="font-bold text-5xl mt-4">My services</h1>
             <p className="mt-4 w-[52%] mx-auto">I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.</p>
