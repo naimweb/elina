@@ -14,11 +14,11 @@ function Nav() {
     <>
       <nav className='flex items-center justify-between px-6 md:px-10 py-4 shadow-md bg-white sticky top-0 z-50'>
     
-        <h1 className='text-2xl font-bold text-blue-600'>Elina</h1>
+        <Link to = "/"className='text-2xl font-bold text-blue-600'>Elina</Link>
 
         {/* Desktop Menu */}
         <div className='hidden md:flex gap-6 text-gray-700 font-medium'>
-          <Link to="/home" className='hover:text-blue-500'>Home</Link>
+          {/* <Link to="/home" className='hover:text-blue-500'>Home</Link> */}
           <Link to="/about" className='hover:text-blue-500'>About</Link>
           <Link to="/work" className='hover:text-blue-500'>MyWork</Link>
           <Link to="/service" className='hover:text-blue-500'>Service</Link>
@@ -69,7 +69,7 @@ function Nav() {
             ✕
           </button>
 
-          <Link onClick={() => setOpen(false)} to="/home">Home</Link>
+          {/* <Link onClick={() => setOpen(false)} to="/home">Home</Link> */}
           <Link onClick={() => setOpen(false)} to="/about">About</Link>
           <Link onClick={() => setOpen(false)} to="/work">MyWork</Link>
           <Link onClick={() => setOpen(false)} to="/service">Service</Link>
