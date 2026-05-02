@@ -8,18 +8,23 @@ import Nav from './Navbar/Nav'
 
 function App() {
   return (
-      <>
-        <Nav />
-        <Home />
-        <About />
+    <>
+     <div>
+    <Nav />
+  
+
+     </div>
+   
         <Routes>
+             <Route path = "/service"  element={<Service />}/>
              <Route path = "/about" element={<About />}/>
+           
              <Route path = "/home"  element={<Home />}/>
              <Route path = "/work"  element={<Work />}/>
-             <Route path = "/service"  element={<Service />}/>
              <Route path = "/contact"  element={<Contact />}/>
 
         </Routes>
+      
 
       </>
   )
