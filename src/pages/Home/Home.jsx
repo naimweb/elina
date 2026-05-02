@@ -6,6 +6,8 @@ import Service from '../Service/Service'
 import Contact from "../Contact/Contact";
 
 function Home() {
+
+    
   return (
     <>
     <div className="w-full mt-6 px-4">
@@ -48,9 +50,12 @@ function Home() {
       </div>
 
     </div>
-    <About />
-   <Work />
-   <Service />
+
+    {/* pages link */}
+        <About />
+      <Work />
+      <Service />
+      <Contact />
    </>
   )
 }
