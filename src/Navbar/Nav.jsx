@@ -43,9 +43,9 @@ function Nav() {
             )
           }
 
-          <button className='hidden md:flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition'>
+          <Link to = "/contact" className='hidden md:flex items-center gap-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition'>
             Contact <BsSend />
-          </button>
+          </Link>
 
           {/* Hamburger */}
           <HiOutlineMenuAlt2 
