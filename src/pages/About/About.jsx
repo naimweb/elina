@@ -24,7 +24,7 @@ function About() {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative">
             <img
-              src="./userPic.png"
+              src="./user.png"
               alt="user"
               className="w-72 md:w-[400px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500"
             />
