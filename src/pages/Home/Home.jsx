@@ -57,7 +57,7 @@ function Home() {
       <Work />
       <Service />
       <Contact />
-      <Footer />
+    
    </>
   )
 }
