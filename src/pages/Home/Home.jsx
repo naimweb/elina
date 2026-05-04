@@ -4,6 +4,7 @@ import About from '../About/About'
 import Work from '../MyWork/Work'
 import Service from '../Service/Service'
 import Contact from "../Contact/Contact";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -37,7 +38,7 @@ function Home() {
 
         {/* Contact button */}
         <div className="flex items-center border px-6 py-3 sm:py-4 rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white cursor-pointer hover:scale-105 transition">
-          <h3>Contact me</h3>
+          <Link to = "/contact">Contact me</Link>
           <LuMoveRight className="ml-2" />
         </div>
 
