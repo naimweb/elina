@@ -1,5 +1,5 @@
 import { BsSend } from "react-icons/bs";
-import Footer from "../fotter/Footer";
+
 function Work() {
    const data = [
     {
@@ -79,7 +79,7 @@ function Work() {
     </div>
 
     {/* footer  */}
-    <Footer />
+  
        </>
   )
 }

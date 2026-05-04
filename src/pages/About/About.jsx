@@ -2,7 +2,7 @@ import { RiCodeSSlashLine } from "react-icons/ri";
 import { IoLogoFigma } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
-import Footer from "../fotter/Footer";
+
 
 function About() {
   return (
@@ -99,7 +99,7 @@ function About() {
     </div>
      {/* footer  */}
 
-    <Footer />
+  
   </>
   )
 }

@@ -5,6 +5,7 @@ import Work from './pages/MyWork/Work'
 import Service from './pages/Service/Service'
 import Contact from './pages/Contact/Contact'
 import Nav from './Navbar/Nav'
+import Footer from './pages/fotter/Footer'
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         {/* <Home /> */}
         </div>
    
-
+<Footer />
       </>
   )
 }
