@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import Footer from "../fotter/Footer";
 
 function Contact() {
   const form = useRef();
@@ -26,6 +27,7 @@ function Contact() {
   };
 
   return (
+    <>
     <div className="max-w-2xl mx-auto mt-12 p-6 bg-white shadow-lg rounded-xl">
 
       <p className="text-center">Connect with me</p>
@@ -48,7 +50,7 @@ function Contact() {
             type="text"
             placeholder="Enter your name"
             required
-          />
+            />
 
           <input
             name="user_email"
@@ -65,12 +67,12 @@ function Contact() {
           placeholder={"Write your message...\n (max 250 characters)"}
           maxLength={250}
           required
-        />
+          />
 
         <button
           type="submit"
           className="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
-        >
+          >
           Send Message
         </button>
 
@@ -78,6 +80,9 @@ function Contact() {
       {/* FORM END */}
 
     </div>
+    {/* footer  */}
+     <Footer />
+</>
   );
 }
 

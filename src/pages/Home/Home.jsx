@@ -4,6 +4,7 @@ import About from '../About/About'
 import Work from '../MyWork/Work'
 import Service from '../Service/Service'
 import Contact from "../Contact/Contact";
+import Footer from "../fotter/Footer";
 
 function Home() {
 
@@ -56,6 +57,7 @@ function Home() {
       <Work />
       <Service />
       <Contact />
+      <Footer />
    </>
   )
 }

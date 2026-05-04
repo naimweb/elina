@@ -2,9 +2,11 @@ import { RiCodeSSlashLine } from "react-icons/ri";
 import { IoLogoFigma } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
+import Footer from "../fotter/Footer";
 
 function About() {
   return (
+    <>
     <div className="mt-20">
 
       {/* Heading */}
@@ -27,7 +29,7 @@ function About() {
               src="./user.png"
               alt="user"
               className="w-72 md:w-[400px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500"
-            />
+              />
             <div className="absolute -bottom-5 -right-5 bg-white shadow-lg px-4 py-2 rounded-full text-xs font-bold">
               Frontend Dev
             </div>
@@ -95,6 +97,10 @@ function About() {
       </div>
       
     </div>
+     {/* footer  */}
+
+    <Footer />
+  </>
   )
 }
 

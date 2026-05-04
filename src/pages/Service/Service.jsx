@@ -2,6 +2,7 @@ import { SiVorondesign } from "react-icons/si";
 import { IoLogoAndroid } from "react-icons/io";
 import { SiTuxedocomputers } from "react-icons/si";
 import { SiCairographics } from "react-icons/si";
+import Footer from "../fotter/Footer";
 function Service() {
 
    const data = [
@@ -83,7 +84,11 @@ function Service() {
   })}
 
 </div>
-     </>
+
+      {/* footer  */}
+      <Footer />
+
+</>
   )
 }
 
