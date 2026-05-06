@@ -1,7 +1,7 @@
 import { BsSend } from "react-icons/bs";
 
 function Work() {
-   const data = [
+  const data = [
     {
       id: 1,
       image: "./frontend.png",
@@ -16,7 +16,7 @@ function Work() {
     },
     {
       id: 3,
-      image: "./web.webp  ",
+      image: "./web.webp",
       title: "Photography site",
       category: "Web Design",
     },
@@ -27,61 +27,72 @@ function Work() {
       category: "UI/UX Design",
     },
   ];
+
   return (
-       <>
-          <div>
-              <div className="text-center mt-[4%] ">
-               
-                 <h1 className="font-bold text-5xl ">My latest work</h1>
-                 <p className="w-[35%] font-mono mt-6 mx-auto mb-[5%]">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.</p>
-              </div>
-             
-             {/* .... */}
+    <>
+      <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300">
 
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] mx-auto ">
+        {/* Heading */}
+        <div className="text-center mt-16 px-4">
+          <h1 className="font-bold text-4xl md:text-5xl">
+            My Latest Work
+          </h1>
 
-        {data.map((item) => (
-          <div 
-            key={item.id}
-            className="relative h-[300px] rounded-2xl overflow-hidden group cursor-pointer hover:-translate-y-2 transition duration-300"
-          >
+          <p className="max-w-xl mx-auto mt-6 text-gray-600 dark:text-gray-300">
+            Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
+          </p>
+        </div>
 
-            {/* Image */}
-            <img
-              src={item.image}
-              alt=""
-              className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-            />
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-[90%] mx-auto mt-12">
 
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
+          {data.map((item) => (
+            <div
+              key={item.id}
+              className="relative h-[300px] rounded-2xl overflow-hidden group cursor-pointer hover:-translate-y-2 transition duration-300 shadow-lg"
+            >
 
-            {/* Bottom card */}
-            <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-md rounded-xl p-4 flex items-center justify-between shadow-lg">
+              {/* Image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
 
-              <div>
-                <h2 className="font-bold text-lg">{item.title}</h2>
-                <p className="text-sm text-gray-600">{item.category}</p>
-              </div>
+              {/* Dark overlay */}
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition"></div>
 
-              {/* Arrow button */}
-              <div className="w-10 h-10 flex items-center justify-center rounded-full border border-black hover:bg-black hover:text-white transition">
-                <BsSend />
+              {/* Bottom card */}
+              <div className="absolute bottom-4 left-4 right-4 
+                bg-white/80 dark:bg-black/60 
+                backdrop-blur-md rounded-xl p-4 
+                flex items-center justify-between 
+                shadow-md border border-gray-200 dark:border-gray-700
+              ">
+
+                <div>
+                  <h2 className="font-bold text-lg">
+                    {item.title}
+                  </h2>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                    {item.category}
+                  </p>
+                </div>
+
+                {/* Button */}
+                <div className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 hover:bg-blue-500 hover:text-white transition">
+                  <BsSend />
+                </div>
+
               </div>
 
             </div>
+          ))}
 
-          </div>
-        ))}
-
-      
+        </div>
       </div>
-    </div>
-
-    {/* footer  */}
-  
-       </>
-  )
+    </>
+  );
 }
 
-export default Work
+export default Work;

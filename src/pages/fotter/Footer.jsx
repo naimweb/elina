@@ -59,7 +59,7 @@ function Footer() {
       {/* Bottom */}
       <div className="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
         &copy; {new Date().getFullYear()} 
-        <span className="text-green-400"> Naim</span>. All rights reserved.
+        <span className="text-green-400 dark:text-orange-500"> Naim</span>. All rights reserved.
       </div>
     </footer>
   );

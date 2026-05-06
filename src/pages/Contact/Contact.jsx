@@ -28,11 +28,11 @@ function Contact() {
 
   return (
     <>
-    <div className="max-w-2xl mx-auto mt-12 p-6 bg-white shadow-lg rounded-xl">
+    <div className="max-w-2xl mx-auto mt-12 p-6  shadow-lg rounded-xl">
 
       <p className="text-center">Connect with me</p>
 
-      <h2 className="text-4xl font-semibold text-center mb-6 text-gray-700">
+      <h2 className="text-4xl font-semibold text-center mb-6">
         Get in touch
       </h2>
 
@@ -71,7 +71,7 @@ function Contact() {
 
         <button
           type="submit"
-          className="mt-6 w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
+          className="mt-6 w-full bg-blue-500 hover:bg-blue-600  py-2 rounded-lg"
           >
           Send Message
         </button>

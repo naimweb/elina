@@ -52,7 +52,7 @@ function Service() {
     return (
       <div
       key={arr.id}
-      className="group relative p-6 rounded-2xl bg-white border hover:-translate-y-2 hover:shadow-2xl transition duration-300 cursor-pointer overflow-hidden"
+      className="group relative p-6 rounded-2xl  border hover:-translate-y-2 hover:shadow-2xl transition duration-300 cursor-pointer overflow-hidden"
 >
 
   {/* Gradient overlay */}
@@ -69,7 +69,7 @@ function Service() {
     </h2>
 
     {/* Description */}
-    <p className="text-sm text-gray-600 leading-relaxed">
+    <p className="text-sm leading-relaxed">
       {arr.description}
     </p>
 
@@ -78,7 +78,7 @@ function Service() {
       {arr.more}
       <span>→</span>
     </div>
-
+      
   </div>
     )
   })}

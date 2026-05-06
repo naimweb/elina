@@ -7,13 +7,15 @@ import Contact from './pages/Contact/Contact'
 import Nav from './Navbar/Nav'
 import Footer from './pages/fotter/Footer'
 
+
 function App() {
+
   return (
     <>
-     <div>
-  
 
-     </div>
+  {/* <div className={dark ? "dark":""}>
+ <button onClick={toogle}>on</button> */}
+    <div className='bg-white dark:bg-primary-dark dark:text-white'>
     <Nav />
    
         <Routes>
@@ -31,7 +33,9 @@ function App() {
         {/* <Home /> */}
         </div>
    
-<Footer />
+    <Footer />
+    </div>
+
       </>
   )
 }
