@@ -5,12 +5,20 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { useEffect, useState } from 'react';
 
 function Nav() {
+  const [open,setOpen] = useState(false)
 
-  const [dark, setDark] = useState(false);
-  const [open, setOpen] = useState(false);
+const [dark, setDark] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
+    if (dark) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
   }, [dark]);
 
   return (

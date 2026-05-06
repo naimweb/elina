@@ -30,8 +30,8 @@ function About() {
               alt="user"
               className="w-72 md:w-[400px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500"
               />
-            <div className="absolute -bottom-5 -right-5 bg-white shadow-lg px-4 py-2 rounded-full text-xs font-bold">
-              Frontend Dev
+            <div className="absolute -bottom-4.5 -right-6 shadow-lg px-4 py-2 rounded-full text-xs font-bold">
+               $Dev 
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ function About() {
 
           {/* Description */}
           <p className=" leading-relaxed text-base md:text-lg">
-            I am an experienced Frontend Developer with over a decade of professional expertise in the field.
+            I am an experienced fullStack Developer with over a decade of professional expertise in the field.
             Throughout my career, I have collaborated with prestigious organizations, contributing to their success and growth.
           </p>
 

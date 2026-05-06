@@ -4,7 +4,6 @@ import About from '../About/About'
 import Work from '../MyWork/Work'
 import Service from '../Service/Service'
 import Contact from "../Contact/Contact";
-import Footer from '../fotter/Footer'
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -29,8 +28,8 @@ function Home() {
           fullStack web developer based in London.
         </h1>
 
-        <p className="w-full sm:w-[90%] md:w-[60%] mx-auto mt-6 font-mono text-sm sm:text-base text-center text-gray-600">
-          I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
+        <p className="w-full sm:w-[90%] md:w-[60%] mx-auto mt-6 font-mono text-sm sm:text-base text-center">
+          I am a fullStack developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
         </p>
       </div>
 
@@ -58,6 +57,7 @@ function Home() {
       <Work />
       <Service />
       <Contact />
+     
    
    </>
   )

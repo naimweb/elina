@@ -30,10 +30,10 @@ function Work() {
 
   return (
     <>
-      <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300">
+      <div className="min-h-screen transition-colors duration-300 ">
 
         {/* Heading */}
-        <div className="text-center mt-16 px-4">
+        <div className="text-center mt-[11%] px-4">
           <h1 className="font-bold text-4xl md:text-5xl">
             My Latest Work
           </h1>
