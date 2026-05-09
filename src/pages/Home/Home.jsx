@@ -1,3 +1,4 @@
+import { useState,useEffect } from "react";
 import { LuMoveRight } from "react-icons/lu";
 import { MdOutlineFileDownload } from "react-icons/md";
 import About from '../About/About'
@@ -7,7 +8,45 @@ import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
 
 function Home() {
+const texts = [
+  "Hi! I'm Eliana Jade 👋 ",
+  "I am a Full Stack Developer.",
+  "I build modern React websites.",
+  "I love clean UI & smooth animations.",
+];
 
+const [textIndex, setTextIndex] = useState(0);
+const [displayText, setDisplayText] = useState("");
+const [isDeleting, setIsDeleting] = useState(false);
+
+useEffect(() => {
+  const currentText = texts[textIndex];
+
+  let timeout;
+
+  if (!isDeleting) {
+    timeout = setTimeout(() => {
+      setDisplayText(currentText.slice(0, displayText.length + 1));
+    }, 200);
+  } else {
+    timeout = setTimeout(() => {
+      setDisplayText(currentText.slice(0, displayText.length - 1));
+    }, 50);
+  }
+
+  if (displayText === currentText && !isDeleting) {
+    timeout = setTimeout(() => {
+      setIsDeleting(true);
+    }, 1000);
+  }
+
+  if (displayText === "" && isDeleting) {
+    setIsDeleting(false);
+    setTextIndex((prev) => (prev + 1) % texts.length);
+  }
+
+  return () => clearTimeout(timeout);
+}, [displayText, isDeleting, textIndex]);
     
   return (
     <>
@@ -21,7 +60,9 @@ function Home() {
       {/* Heading */}
       <div>
         <h1 className="text-center text-xl sm:text-2xl mt-4">
-          Hi! I'm Eliana Jade 👋
+          {/* Hi! I'm Eliana Jade 👋 */}
+          {displayText}
+           <span className="animate-pulse">|</span>
         </h1>
 
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mx-auto font-mono text-center mt-4 w-full sm:w-[90%] md:w-[70%]">

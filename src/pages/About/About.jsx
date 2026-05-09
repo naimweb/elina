@@ -5,6 +5,7 @@ import { FaGitAlt } from "react-icons/fa";
 
 
 function About() {
+  
   return (
     <>
     <div className="mt-20">
