@@ -7,7 +7,7 @@ function Footer() {
 
         {/* Brand */}
         <div>
-          <h1 className="text-2xl font-bold text-white mb-2">Naim</h1>
+          <h1 className="text-2xl font-bold text-white mb-2">Elina</h1>
           <p className="text-sm text-gray-400">
             Building modern and user-friendly web applications.
           </p>
